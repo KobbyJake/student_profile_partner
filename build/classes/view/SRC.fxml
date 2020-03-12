@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="baseContainer" onMouseEntered="#LoadPageData" onMouseExited="#resetPage" prefHeight="740.0" prefWidth="1366.0" stylesheets="@Theme.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SRCController">
+    <bottom>
+        <HBox id="HBox" alignment="CENTER_LEFT" spacing="5.0" styleClass="textSpace" stylesheets="@Theme.css" BorderPane.alignment="CENTER">
+            <children>
+                <Label maxHeight="1.7976931348623157E308" maxWidth="-1.0" prefHeight="16.0" prefWidth="125.0" text="©JCyberSolutions 2015" HBox.hgrow="ALWAYS">
+                    <font>
+                        <Font size="11.0" fx:id="x3" />
+                    </font>
+                    <textFill>
+                        <Color blue="0.625" green="0.625" red="0.625" fx:id="x4" />
+                    </textFill>
+                </Label>
+                <Region HBox.hgrow="ALWAYS" />
+                <Label contentDisplay="RIGHT" font="$x3" maxWidth="-1.0" prefHeight="16.0" prefWidth="107.0" text="Contact: 0242525727 " textAlignment="RIGHT" textFill="$x4" HBox.hgrow="NEVER" />
+            </children>
+            <padding>
+                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+            </padding>
+        </HBox>
+    </bottom>
+    <center>
+        <BorderPane BorderPane.alignment="CENTER">
+            <left>
+                <BorderPane>
+                    <center>
+                        <VBox id="content" prefHeight="614.0" prefWidth="207.0" stylesheets="@Theme.css">
+                            <children>
+                                <Region prefHeight="13.0" prefWidth="203.0" />
+                                <Text fx:id="lblDescriptionHeader" strokeType="OUTSIDE" strokeWidth="0.0" text="bio" textAlignment="CENTER" wrappingWidth="265.18405532836914">
+                                    <font>
+                                        <Font name="Copperplate Gothic Bold" size="25.0" />
+                                    </font>
+                                </Text>
+                                <TextArea fx:id="txaDescription" blendMode="EXCLUSION" editable="false" prefHeight="506.0" prefWidth="268.0" text="This system is an S.R.C. initiative designed to augment the online students information system. " wrapText="true">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                    </padding>
+                                    <VBox.margin>
+                                        <Insets />
+                                    </VBox.margin>
+                                    <cursor>
+                                        <Cursor fx:constant="DISAPPEAR" />
+                                    </cursor>
+                                    <effect>
+                                        <Lighting bumpInput="$null" diffuseConstant="2.0" specularConstant="0.0" specularExponent="40.0" surfaceScale="0.0">
+                                            <light>
+                                                <Light.Distant color="#ff8f8f" />
+                                            </light>
+                                        </Lighting>
+                                    </effect>
+                                </TextArea>
+                        <Region prefHeight="40.0" prefWidth="268.0" />
+                            </children>
+                            <BorderPane.margin>
+                                <Insets bottom="5.0" right="5.0" />
+                            </BorderPane.margin>
+                        </VBox>
+                    </center>
+                    <BorderPane.margin>
+                        <Insets />
+                    </BorderPane.margin>
+               <top>
+                  <ToolBar prefHeight="23.0" prefWidth="275.0" BorderPane.alignment="CENTER">
+                    <items>
+                        <Region prefHeight="40.0" prefWidth="69.0" />
+                      <Button id="menuTile" alignment="CENTER" graphicTextGap="1.0" mnemonicParsing="false" onAction="#startIndexPage" prefHeight="35.0" prefWidth="113.0" text="Home">
+                           <effect>
+                              <DropShadow>
+                                 <input>
+                                    <Reflection />
+                                 </input>
+                              </DropShadow>
+                           </effect>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0">
+                                 <image>
+                                    <Image url="@Touch.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Region layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="69.0" />
+                    </items>
+                  </ToolBar>
+               </top>
+                </BorderPane>
+            </left>
+            <center>
+            <BorderPane id="content">
+               <BorderPane.margin>
+                  <Insets bottom="5.0" />
+               </BorderPane.margin>
+               <center>
+                  <FlowPane id="slideShowPallet" fx:id="imageHolder" alignment="CENTER" columnHalignment="CENTER" />
+               </center>
+               <top>
+                  <FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="52.0" prefWidth="1086.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="btnLeftScroll" mnemonicParsing="false" onAction="#scrollLeft" onKeyPressed="#scanLeftKey" prefHeight="20.0" prefWidth="64.0">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="32.0">
+                                 <image>
+                                    <Image url="@Left.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <effect>
+                              <DropShadow>
+                                 <input>
+                                    <Reflection />
+                                 </input>
+                              </DropShadow>
+                           </effect>
+                        </Button>
+                        <ComboBox fx:id="cboTitle" onAction="#showImage" prefHeight="34.0" prefWidth="361.0">
+                           <effect>
+                              <DropShadow>
+                                 <input>
+                                    <Reflection fraction="0.8" topOffset="4.0" topOpacity="0.8" />
+                                 </input>
+                              </DropShadow>
+                           </effect></ComboBox>
+                        <Button fx:id="btnRightScroll" mnemonicParsing="false" onAction="#scrollRight" onKeyPressed="#scanRightKey">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="32.0">
+                                 <image>
+                                    <Image url="@Right.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <effect>
+                              <DropShadow>
+                                 <input>
+                                    <Reflection />
+                                 </input>
+                              </DropShadow>
+                           </effect>
+                        </Button>
+                     </children>
+                  </FlowPane>
+               </top>
+            </BorderPane>
+            </center>
+        </BorderPane>
+    </center>
+    <top>
+        <HBox id="logTextSpace" alignment="CENTER_RIGHT" prefHeight="70.0" prefWidth="1246.0" styleClass="textSpace" stylesheets="@Theme.css">
+            <children>
+                <Text id="welcome-text" fx:id="txtTitle" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="S.R.C" wrappingWidth="1088.13671875">
+                    <font>
+                        <Font name="Britannic Bold" size="43.0" />
+                    </font>
+                </Text>
+            </children>
+        </HBox>
+    </top>
+</BorderPane>

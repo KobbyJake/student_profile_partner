@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="baseContainer" onMouseEntered="#refreshPage" prefHeight="740.0" prefWidth="1366.0" stylesheets="@Theme.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IndexController">
+   <bottom>
+      <HBox id="HBox" alignment="CENTER_LEFT" spacing="5.0" styleClass="textSpace" stylesheets="@Theme.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="-1.0" prefHeight="16.0" prefWidth="125.0" text="©JCyberSolutions 2015" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="11.0" fx:id="x3" />
+               </font>
+               <textFill>
+                  <Color blue="0.625" green="0.625" red="0.625" fx:id="x4" />
+               </textFill>
+            </Label>
+            <FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="20.0" prefWidth="1105.0">
+               <children>
+                  <Label fx:id="lblCurrentUser" text="Label" textAlignment="CENTER" visible="false" />
+               </children>
+            </FlowPane>
+            <Label contentDisplay="RIGHT" font="$x3" maxWidth="-1.0" prefHeight="16.0" prefWidth="107.0" text="Contact: 0242525727 " textAlignment="RIGHT" textFill="$x4" HBox.hgrow="NEVER" />
+         </children>
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <center>
+      <AnchorPane id="content" prefHeight="574.0" prefWidth="1087.0" stylesheets="@Theme.css">
+         <children>
+            <ImageView fx:id="logo2" blendMode="MULTIPLY" fitHeight="575.0" fitWidth="608.0" layoutX="183.0" layoutY="8.0" opacity="0.1" preserveRatio="true">
+               <image>
+                  <Image url="@new%20logo.png" />
+               </image>
+               <effect>
+                  <SepiaTone />
+               </effect>
+            </ImageView>
+            <Pane fx:id="mainMenu" disable="true" layoutX="44.0" layoutY="59.0" prefHeight="472.0" prefWidth="853.0">
+               <children>
+                  <Button id="menuTile" alignment="CENTER" contentDisplay="BOTTOM" graphicTextGap="0.0" layoutX="14.0" layoutY="293.0" mnemonicParsing="false" onAction="#startPerformance" onMouseEntered="#startMouseEntryAnimation" onMouseExited="#startMouseExitAnimation" prefHeight="165.0" prefWidth="150.0" text="Performance" textAlignment="CENTER">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                     <effect>
+                        <Glow>
+                           <input>
+                              <DropShadow blurType="GAUSSIAN" color="#00000058" spread="1.0" />
+                           </input>
+                        </Glow>
+                     </effect>
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@Column-Chart-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button id="menuTile" contentDisplay="BOTTOM" layoutX="462.0" layoutY="14.0" mnemonicParsing="false" onAction="#startAcademics" onMouseEntered="#startMouseEntryAnimation" onMouseExited="#startMouseExitAnimation" prefHeight="165.0" prefWidth="150.0" text="Academics" textAlignment="CENTER">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                     <effect>
+                        <Glow>
+                           <input>
+                              <DropShadow blurType="GAUSSIAN" color="#00000058" spread="1.0" />
+                           </input>
+                        </Glow>
+                     </effect>
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@Edit-Text-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button id="menuTile" alignment="CENTER" contentDisplay="BOTTOM" graphicTextGap="0.0" layoutX="678.0" layoutY="17.0" mnemonicParsing="false" onAction="#startGrading" onMouseEntered="#startMouseEntryAnimation" onMouseExited="#startMouseExitAnimation" prefHeight="165.0" prefWidth="150.0" text="Grading" textAlignment="CENTER">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                     <effect>
+                        <Glow>
+                           <input>
+                              <DropShadow blurType="GAUSSIAN" color="#00000058" spread="1.0" />
+                           </input>
+                        </Glow>
+                     </effect>
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@calc-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button id="menuTile" alignment="CENTER" contentDisplay="BOTTOM" graphicTextGap="0.0" layoutX="237.0" layoutY="293.0" mnemonicParsing="false" onAction="#startWallet" onMouseEntered="#startMouseEntryAnimation" onMouseExited="#startMouseExitAnimation" prefHeight="165.0" prefWidth="150.0" text="Wallet" textAlignment="CENTER">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                     <effect>
+                        <Glow>
+                           <input>
+                              <DropShadow blurType="GAUSSIAN" color="#00000058" spread="1.0" />
+                           </input>
+                        </Glow>
+                     </effect>
+                     <graphic>
+                        <ImageView fitHeight="128.0" fitWidth="125.0">
+                           <image>
+                              <Image url="@money-wallet-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button id="menuTile" alignment="CENTER" contentDisplay="BOTTOM" graphicTextGap="0.0" layoutX="462.0" layoutY="293.0" mnemonicParsing="false" onAction="#startDocuments" onMouseEntered="#startMouseEntryAnimation" onMouseExited="#startMouseExitAnimation" prefHeight="165.0" prefWidth="150.0" text="Documents" textAlignment="CENTER">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                     <effect>
+                        <Glow>
+                           <input>
+                              <DropShadow blurType="GAUSSIAN" color="#00000058" spread="1.0" />
+                           </input>
+                        </Glow>
+                     </effect>
+                     <graphic>
+                        <ImageView fitHeight="114.0" fitWidth="117.0">
+                           <image>
+                              <Image url="@data-management-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button id="menuTile" alignment="CENTER" contentDisplay="BOTTOM" graphicTextGap="0.0" layoutX="237.0" layoutY="16.0" mnemonicParsing="false" onAction="#startSchedule" onMouseEntered="#startMouseEntryAnimation" onMouseExited="#startMouseExitAnimation" prefHeight="165.0" prefWidth="150.0" text="Schedule" textAlignment="CENTER">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                     <effect>
+                        <Glow>
+                           <input>
+                              <DropShadow blurType="GAUSSIAN" color="#00000058" spread="1.0" />
+                           </input>
+                        </Glow>
+                     </effect>
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@time-to-get-up-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button id="menuTile" alignment="CENTER" contentDisplay="BOTTOM" graphicTextGap="0.0" layoutX="14.0" layoutY="17.0" mnemonicParsing="false" onAction="#startCourses" onMouseEntered="#startMouseEntryAnimation" onMouseExited="#startMouseExitAnimation" prefHeight="165.0" prefWidth="150.0" text="Courses" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@research-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                     <effect>
+                        <Glow>
+                           <input>
+                              <DropShadow blurType="GAUSSIAN" color="#00000058" spread="1.0" />
+                           </input>
+                        </Glow>
+                     </effect>
+                  </Button>
+                  <Button id="menuTile" alignment="CENTER" contentDisplay="BOTTOM" graphicTextGap="0.0" layoutX="678.0" layoutY="293.0" mnemonicParsing="false" onAction="#startSettings" onMouseEntered="#startMouseEntryAnimation" onMouseExited="#startMouseExitAnimation" prefHeight="165.0" prefWidth="150.0" text="Settings" textAlignment="CENTER">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                     <effect>
+                        <Glow>
+                           <input>
+                              <DropShadow blurType="GAUSSIAN" color="#00000058" spread="1.0" />
+                           </input>
+                        </Glow>
+                     </effect>
+                     <graphic>
+                        <ImageView fitHeight="128.0" fitWidth="123.0">
+                           <image>
+                              <Image url="@Actions-configure-shortcuts-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </BorderPane.margin>
+      </AnchorPane>
+   </center>
+   <top>
+      <HBox id="logTextSpace" alignment="CENTER_LEFT" prefHeight="112.0" prefWidth="1366.0" styleClass="textSpace" stylesheets="@Theme.css">
+         <children>
+            <ImageView fx:id="logo" blendMode="MULTIPLY" fitHeight="100.0" fitWidth="98.0">
+               <image>
+                  <Image url="@new%20logo.png" />
+               </image>
+            </ImageView>
+            <Region prefHeight="108.0" prefWidth="283.0" HBox.hgrow="ALWAYS" />
+            <Text id="welcome-text" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Students' Profile Partner" wrappingWidth="515.13671875" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Britannic Bold" size="55.0" />
+               </font>
+            </Text>
+            <Region layoutX="148.0" layoutY="12.0" prefHeight="108.0" prefWidth="291.0" HBox.hgrow="ALWAYS" />
+            <ImageView fx:id="logo1" blendMode="MULTIPLY" fitHeight="99.0" fitWidth="93.0" HBox.hgrow="ALWAYS">
+               <image>
+                  <Image url="@firm_logo.png" />
+               </image>
+            </ImageView>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </HBox>
+   </top>
+   <left>
+      <VBox id="content" prefHeight="614.0" prefWidth="207.0" stylesheets="@Theme.css">
+         <children>
+            <Region prefHeight="9.0" prefWidth="203.0" />
+            <Text fx:id="lblDescriptionHeader1" strokeType="OUTSIDE" strokeWidth="0.0" text="Links" textAlignment="CENTER" wrappingWidth="202.18405532836914">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="18.0" />
+               </font>
+            </Text>
+            <FlowPane alignment="CENTER">
+               <children>
+                  <Hyperlink fx:id="hptUEW" layoutX="32.0" layoutY="49.0" onAction="#startUEWLink" text="U.E.W. website" textFill="#001a83" />
+                  <Hyperlink fx:id="htpOSIS" onAction="#startOSISLink" text="U.E.W. Students' portal(OSIS)" textFill="#001a83" />
+                  <Hyperlink fx:id="htpLibrary" layoutX="32.0" layoutY="73.0" onAction="#startLibraryLink" text="U.E.W. Online Libriary" textFill="#001a83" />
+                  <Hyperlink fx:id="htpInfo" layoutX="45.0" layoutY="64.0" onAction="#startInfo" text="About this application" textFill="#001a83" />
+               </children>
+            </FlowPane>
+            <Region layoutX="12.0" layoutY="496.0" prefHeight="42.0" prefWidth="203.0" />
+            <FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="64.0" prefWidth="203.0">
+               <children>
+                  <ImageView blendMode="MULTIPLY" fitHeight="92.0" fitWidth="110.0">
+                     <image>
+                        <Image url="@system_security_card_99784.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </FlowPane>
+            <Label fx:id="lblUserName" prefHeight="26.0" prefWidth="156.0" text="    Username">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+            <FlowPane alignment="CENTER">
+               <children>
+                  <TextField fx:id="txtUName" prefHeight="29.0" prefWidth="164.0">
+                     <tooltip>
+                        <Tooltip text="Enter user name here." />
+                     </tooltip></TextField>
+               </children>
+            </FlowPane>
+            <Label fx:id="lblPassword" text="    Password">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+            <FlowPane alignment="CENTER">
+               <children>
+                  <PasswordField fx:id="txtPword" onKeyPressed="#scanKey">
+                     <tooltip>
+                        <Tooltip text="Enter password here" />
+                     </tooltip></PasswordField>
+               </children>
+            </FlowPane>
+            <FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="107.0" prefWidth="203.0">
+               <children>
+                  <Button fx:id="btnLogin" defaultButton="true" mnemonicParsing="false" onAction="#login" prefHeight="43.0" prefWidth="84.0" text="Sign in">
+                     <effect>
+                        <Reflection />
+                     </effect>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <tooltip>
+                        <Tooltip text="click to login" />
+                     </tooltip>
+                  </Button>
+               </children>
+            </FlowPane>
+            <Region prefHeight="11.0" prefWidth="203.0" />
+            <FlowPane fx:id="newUserPane" alignment="CENTER">
+               <children>
+                  <Region prefHeight="33.0" prefWidth="22.0" />
+                  <Hyperlink fx:id="newUserHyperlink" onAction="#startNewProfile" text="Sign Up" textFill="#001a83">
+                     <tooltip>
+                        <Tooltip text="create new profile." />
+                     </tooltip>
+                     <font>
+                        <Font size="16.0" />
+                     </font></Hyperlink>
+                  <Region layoutX="18.0" layoutY="10.0" prefHeight="33.0" prefWidth="18.0" />
+                  <Hyperlink fx:id="resetPassHyperlink" layoutX="90.0" layoutY="10.0" onAction="#resetPassword" text="Forgot Password" textFill="#282827">
+                     <tooltip>
+                        <Tooltip text="reset password" />
+                     </tooltip>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </FlowPane>
+            <Region layoutX="12.0" layoutY="485.0" prefHeight="11.0" prefWidth="203.0" />
+            <FlowPane alignment="CENTER" layoutX="12.0" layoutY="440.0">
+               <children>
+                  <Hyperlink fx:id="signOutHyperlink" alignment="CENTER" disable="true" onAction="#doSignOut" text="Sign out" textFill="#001a83">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="click to logout" />
+                     </tooltip>
+                  </Hyperlink>
+               </children>
+            </FlowPane>
+            <Region layoutX="12.0" layoutY="548.0" prefHeight="11.0" prefWidth="203.0" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <right>
+      <VBox id="content" prefHeight="614.0" prefWidth="207.0" stylesheets="@Theme.css">
+         <children>
+            <Region prefHeight="13.0" prefWidth="203.0" />
+            <Text fx:id="lblDescriptionHeader" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome" textAlignment="CENTER" wrappingWidth="202.18405532836914">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="25.0" />
+               </font>
+            </Text>
+            <Region prefHeight="9.0" prefWidth="203.0" />
+            <Region />
+            <TextArea fx:id="txaDescription" blendMode="EXCLUSION" editable="false" prefHeight="316.0" prefWidth="203.0" text="This system is designed to augment the online students information system. " wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="DISAPPEAR" />
+               </cursor>
+               <effect>
+                  <Lighting bumpInput="$null" diffuseConstant="2.0" specularConstant="0.0" specularExponent="40.0" surfaceScale="0.0">
+                     <light>
+                        <!--<Light.Distant color="#ff8f8f" />-->
+                     </light>
+                  </Lighting>
+               </effect>
+            </TextArea>
+            <Region layoutX="12.0" layoutY="430.0" prefHeight="14.0" prefWidth="203.0" />
+            <Label alignment="CENTER" prefHeight="25.0" prefWidth="195.0" text="Student Resources">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cboResource" onAction="#openResource" prefHeight="34.0" prefWidth="201.0" />
+            <Region layoutX="12.0" layoutY="60.0" prefHeight="36.0" prefWidth="203.0" />
+            <Hyperlink fx:id="hptSRC" alignment="CENTER" onAction="#startSCRPage" prefHeight="37.0" prefWidth="197.0" text="Partners" textAlignment="CENTER" textFill="#001a83" underline="true">
+               <font>
+                  <Font name="Cooper Black" size="20.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="view sponsors." />
+               </tooltip>
+            </Hyperlink>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </BorderPane.margin>
+      </VBox>
+   </right>
+</BorderPane>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="baseContainer" onMouseEntered="#loadHalls" prefHeight="740.0" prefWidth="1366.0" stylesheets="@Theme.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserController">
+   <bottom>
+      <HBox id="HBox" alignment="CENTER_LEFT" spacing="5.0" styleClass="textSpace" stylesheets="@Theme.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="-1.0" prefHeight="16.0" prefWidth="125.0" text="©JCyberSolutions 2015" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="11.0" fx:id="x3" />
+               </font>
+               <textFill>
+                  <Color blue="0.625" green="0.625" red="0.625" fx:id="x4" />
+               </textFill>
+            </Label>
+            <Region HBox.hgrow="ALWAYS" />
+            <Label contentDisplay="RIGHT" font="$x3" maxWidth="-1.0" prefHeight="16.0" prefWidth="107.0" text="Contact: 0242525727 " textAlignment="RIGHT" textFill="$x4" HBox.hgrow="NEVER" />
+         </children>
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <center>
+      <BorderPane BorderPane.alignment="CENTER">
+         <center>
+            <AnchorPane id="content" prefHeight="605.0" prefWidth="877.0" stylesheets="@Theme.css">
+               <children>
+                  <Label layoutX="254.0" layoutY="18.0" text="Username">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="254.0" layoutY="84.0" text="Password">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtUsername" layoutX="254.0" layoutY="40.0" prefHeight="30.0" prefWidth="200.0" promptText="Display name" />
+                  <Label layoutX="254.0" layoutY="155.0" text="Confirm Password">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="256.0" layoutY="221.0" text="First Name">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="256.0" layoutY="294.0" text="Last Name">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="484.0" layoutY="294.0" text="Programme of study">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="484.0" layoutY="218.0" text="Hall of affilliation">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="484.0" layoutY="18.0" text="Index number">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ToolBar focusTraversable="false" layoutX="251.0" layoutY="537.0" prefHeight="42.0" prefWidth="433.0" stylesheets="@../../../VenueScheduler/src/presenter/ContentStyler.css">
+                     <items>
+                        <Button fx:id="btnaddNewUser" defaultButton="true" focusTraversable="false" mnemonicParsing="false" onAction="#addNewUser" prefHeight="30.0" prefWidth="80.0" text="Add" />
+                        <Button fx:id="btnupdateUser" disable="true" focusTraversable="false" mnemonicParsing="false" onAction="#updateUser" prefHeight="30.0" prefWidth="80.0" text="Update" />
+                        <Button fx:id="btnreadUserData" disable="true" focusTraversable="false" mnemonicParsing="false" onAction="#readUserData" prefHeight="30.0" prefWidth="80.0" text="Read" />
+                        <Button fx:id="btnclearUserInput" focusTraversable="false" mnemonicParsing="false" onAction="#clearUserInput" prefHeight="30.0" prefWidth="80.0" text="Clear" />
+                        <Button fx:id="btndeleteUser" disable="true" focusTraversable="false" mnemonicParsing="false" onAction="#deleteUser" prefHeight="30.0" prefWidth="80.0" text="Delete" />
+                     </items>
+                  </ToolBar>
+                  <Label layoutX="253.0" layoutY="350.0" text="Note">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="484.0" layoutY="84.0" text="Telephone number.">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="484.0" layoutY="155.0" text="Email address">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="txtPassword" layoutX="256.0" layoutY="105.0" prefHeight="30.0" prefWidth="200.0" promptText="Password " />
+                  <PasswordField fx:id="txtPassword2" layoutX="256.0" layoutY="176.0" prefHeight="30.0" prefWidth="200.0" promptText="same password here" />
+                  <TextField fx:id="txtFirstName" layoutX="256.0" layoutY="246.0" prefHeight="30.0" prefWidth="200.0" promptText="First name" />
+                  <TextField fx:id="txtLastName" layoutX="256.0" layoutY="319.0" prefHeight="30.0" prefWidth="200.0" promptText="Other names" />
+                  <TextField fx:id="txtIndexNumber" layoutX="484.0" layoutY="40.0" onKeyPressed="#checkDigit" prefHeight="30.0" prefWidth="200.0" promptText="index number" />
+                  <TextField fx:id="txtTelephoneNumber" layoutX="484.0" layoutY="105.0" onKeyPressed="#checkDigit" prefHeight="30.0" prefWidth="200.0" promptText="telephone number" />
+                  <TextField fx:id="txtEmailAddress" layoutX="484.0" layoutY="176.0" prefHeight="30.0" prefWidth="200.0" promptText="email address" />
+                  <ComboBox fx:id="cboHall" editable="true" layoutX="484.0" layoutY="240.0" prefHeight="30.0" prefWidth="200.0" promptText="Select a Hall" />
+                  <ComboBox fx:id="cboProgram" editable="true" layoutX="484.0" layoutY="317.0" prefHeight="30.0" prefWidth="200.0" promptText="Select a programme" />
+                  <TextArea fx:id="txaNote1" layoutX="254.0" layoutY="375.0" prefHeight="150.0" prefWidth="433.0" promptText="Address" />
+                  <AnchorPane fx:id="imageAnchor" layoutX="13.0" layoutY="9.0">
+                     <children>
+                        <ImageView fx:id="imageFrame" fitHeight="222.0" fitWidth="223.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Cyballot/src/view/miscell.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <ImageView fx:id="imageFrame1" fitHeight="222.0" fitWidth="223.0" layoutX="13.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Cyballot/src/view/miscell.png" />
+                     </image>
+                  </ImageView>
+                  <Hyperlink fx:id="photoLoader" layoutX="81.0" layoutY="247.0" onAction="#getSelectedImage" text="Load photo" textFill="#463131">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="5.0" />
+               </BorderPane.margin></AnchorPane>
+         </center>
+         <top>
+            <VBox BorderPane.alignment="CENTER">
+               <children>
+                  <MenuBar prefHeight="39.0" prefWidth="222.0" stylesheets="@MenuStyler.css">
+                     <menus>
+                        <Menu mnemonicParsing="false">
+                           <graphic>
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#loadIndexPage" prefHeight="65.0" prefWidth="80.0" text="Home">
+                                 <graphic>
+                                    <ImageView fitHeight="18.0" fitWidth="16.0">
+                                       <image>
+                                          <Image url="@Touch.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </graphic>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="File">
+                           <items>
+                              <Menu mnemonicParsing="false" text="Help">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#startInfo" text="Info">
+                                       <graphic>
+                                          <ImageView>
+                                             <image>
+                                                <Image url="@Actions-help-about-icon.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <accelerator>
+                                          <KeyCodeCombination alt="DOWN" code="I" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                                       </accelerator>
+                                    </MenuItem>
+                                    <MenuItem mnemonicParsing="false" onAction="#launchAboutHelp" text="About">
+                                       <graphic>
+                                          <ImageView fitHeight="15.0" fitWidth="15.0">
+                                             <image>
+                                                <Image url="@graduate.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <accelerator>
+                                          <KeyCodeCombination alt="DOWN" code="U" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                                       </accelerator>
+                                    </MenuItem>
+                                 </items>
+                                 <graphic>
+                                    <ImageView>
+                                       <image>
+                                          <Image url="@Button-Help-iconi.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Menu>
+                              <MenuItem fx:id="exitMenuItem" mnemonicParsing="false" onAction="#doExit" text="Exit">
+                                 <accelerator>
+                                    <KeyCodeCombination alt="DOWN" code="X" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                                 </accelerator>
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0">
+                                       <image>
+                                          <Image url="@Exit.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </MenuItem>
+                           </items>
+                        </Menu>
+                     </menus>
+                  </MenuBar>
+               </children>
+            </VBox>
+         </top>
+         <left>
+            <VBox id="content" prefHeight="614.0" prefWidth="207.0" stylesheets="@Theme.css">
+               <children>
+                  <Region prefHeight="17.0" prefWidth="203.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="202.18405532836914">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="33.0" />
+                     </font>
+                  </Text>
+                  <FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="132.0" prefWidth="172.0" />
+                  <FlowPane alignment="CENTER" />
+                  <Region prefHeight="17.0" prefWidth="203.0" />
+                  <FlowPane alignment="CENTER" />
+                  <Region prefHeight="33.0" prefWidth="207.0" />
+                  <Region layoutX="12.0" layoutY="485.0" prefHeight="23.0" prefWidth="203.0" />
+                  <Region prefHeight="23.0" prefWidth="203.0" />
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="5.0" right="5.0" />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <right>
+            <VBox id="content" prefHeight="614.0" prefWidth="207.0" stylesheets="@Theme.css">
+               <children>
+                  <Region prefHeight="17.0" prefWidth="203.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="202.18405532836914">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="33.0" />
+                     </font>
+                  </Text>
+                  <FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="132.0" prefWidth="172.0" />
+                  <FlowPane alignment="CENTER" />
+                  <Region prefHeight="17.0" prefWidth="203.0" />
+                  <FlowPane alignment="CENTER" />
+                  <Region prefHeight="33.0" prefWidth="207.0" />
+                  <Region layoutX="12.0" layoutY="485.0" prefHeight="23.0" prefWidth="203.0" />
+                  <Region prefHeight="23.0" prefWidth="203.0" />
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="5.0" left="5.0" />
+               </BorderPane.margin>
+            </VBox>
+         </right>
+      </BorderPane>
+   </center>
+   <top>
+      <HBox id="logTextSpace" alignment="CENTER" prefHeight="70.0" prefWidth="1246.0" styleClass="textSpace" stylesheets="@Theme.css">
+         <children>
+            <Text id="welcome-text" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="New Profile" wrappingWidth="515.13671875">
+               <font>
+                  <Font name="Britannic Bold" size="43.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

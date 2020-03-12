@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="baseContainer" onMouseEntered="#refreshPage" prefHeight="740.0" prefWidth="1366.0" stylesheets="@Theme.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IndexController">
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="85.0" prefWidth="1366.0" styleClass="textSpaceNew" stylesheets="@Theme.css">
+         <children>
+            <AnchorPane prefHeight="114.0" prefWidth="184.0" />
+            <Region prefHeight="114.0" prefWidth="75.0" HBox.hgrow="ALWAYS">
+               <effect>
+                  <SepiaTone />
+               </effect>
+            </Region>
+            <ImageView fitHeight="107.0" fitWidth="100.0">
+               <image>
+                  <Image url="@graduate.png" />
+               </image>
+            </ImageView>
+            <Text id="welcome-text" blendMode="MULTIPLY" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Students' Profile Partner. Event Schedule" underline="true" wrappingWidth="622.13671875" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Britannic Bold" size="55.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="logo1" blendMode="MULTIPLY" fitHeight="107.0" fitWidth="98.0" HBox.hgrow="ALWAYS">
+               <image>
+                  <Image url="@logo.jpg" />
+               </image>
+            </ImageView>
+            <Region layoutX="148.0" layoutY="12.0" prefHeight="114.0" prefWidth="75.0" HBox.hgrow="ALWAYS">
+               <effect>
+                  <SepiaTone />
+               </effect></Region>
+            <AnchorPane prefHeight="114.0" prefWidth="186.0" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </HBox>
+   </top>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <effect>
+            <SepiaTone />
+         </effect>
+         <children>
+            <ComboBox disable="true" layoutX="14.0" layoutY="80.0" prefHeight="622.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <effect>
+            <SepiaTone />
+         </effect>
+         <children>
+            <ComboBox disable="true" prefHeight="622.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

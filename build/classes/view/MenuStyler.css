@@ -1,0 +1,163 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.rootSpace{
+       -fx-background-image: url("skulls.png");
+}
+.table-view:row-selection .column-header-background .filler{
+    -fx-background: #F4F4F4;
+    -fx-focus-color: #0093FF;
+    -fx-control-inner-background: #FFFFFF;
+     
+}
+.newText{
+    -fx-font-family: "Catriel";
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+    -fx-font-size: 40.0px;
+    -fx-text-fill: ladder(background, white 49%, black 50%);
+    -fx-fill: ladder(background, white 49%, black 50%);
+    -fx-base: #D0D0D0;
+}
+.textSpace{
+  
+   -fx-background-image: url("sprinkles.png");
+    -fx-font-family: "Catriel";
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+    -fx-font-size: 13.0px;
+    -fx-base: #D0D0D0;
+/*    -fx-background: #F4F4F4;*/
+/*    -fx-text-alignment: right;*/
+    -fx-focus-color: #0093FF;
+    -fx-control-inner-background: #FFFFFF;
+    -fx-inner-border: linear-gradient(to bottom, derive(-fx-color,68.85423728813561%) 0%, derive(-fx-color,5.810169491525421%) 100%);
+    -fx-body-color: linear-gradient( to bottom, derive(-fx-color, 22.135593220339004%) 0%, derive(-fx-color, 20.0%) 50%, derive(-fx-color, 18.305084745762713%) 50.5%, derive(-fx-color, -56.98305084745763%) 100%);
+    -fx-outer-border: derive(-fx-color,11.52542372881355%);
+    -fx-shadow-highlight-color: derive(-fx-background,-100.0%);
+    -fx-text-box-border: derive(-fx-background,-33.89830508474576%);
+}
+
+#logTextSpace{
+        -fx-text-alignment: left;
+}
+#content{
+ -fx-font-family: "Catriel";
+    -fx-font-size: 13.0px;
+    -fx-base: #D0D0D0;
+    -fx-border-style: solid;
+    -fx-border-width: 1.5px;
+ -fx-background-image: url("hoffman.png");
+    -fx-focus-color: #0093FF;
+    -fx-control-inner-background: #FFFFFF;
+    -fx-inner-border: linear-gradient(to bottom, derive(-fx-color,68.85423728813561%) 0%, derive(-fx-color,5.810169491525421%) 100%);
+    -fx-body-color: linear-gradient( to bottom, derive(-fx-color, 22.135593220339004%) 0%, derive(-fx-color, 20.0%) 50%, derive(-fx-color, 18.305084745762713%) 50.5%, derive(-fx-color, -56.98305084745763%) 100%);
+    -fx-outer-border: derive(-fx-color,11.52542372881355%);
+    -fx-shadow-highlight-color: derive(-fx-background,-100.0%);
+    -fx-text-box-border: derive(-fx-background,-33.89830508474576%);
+    -fx-pref-width: 100%;
+    -fx-pref-height: 80%;
+}
+#header{
+     -fx-pref-width: 100%;
+    -fx-pref-height: 15%;
+    -fx-max-width:100%;
+    -fx-max-height:15%;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+#footer{
+     -fx-pref-width: 100%;
+    -fx-pref-height: 5%;
+    -fx-max-width:100%;
+    -fx-max-height:5%;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+#welcome-text {
+   -fx-font-size: 38px;
+   -fx-font-family: "Arial Black";
+   -fx-fill: #818181;
+   -fx-text-alignment: center;
+   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+
+.root {
+
+    -fx-font-family: "Impact";
+    -fx-font-size: 14.129411764705882px;
+    -fx-base: #000000;
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+    -fx-background: #A6D9D7;
+     /**/
+    
+    -fx-focus-color: #1D186D;
+    -fx-control-inner-background: #B8B3B3;
+    -fx-inner-border: linear-gradient(to bottom, derive(-fx-color,100.0%) 0%, derive(-fx-color,95.74193548387098%) 100%);
+    -fx-body-color: linear-gradient( to bottom, derive(-fx-color, -100.0%) 0%, derive(-fx-color, 34.0%) 50%, derive(-fx-color, 5.0%) 50.5%, derive(-fx-color, -10.0%) 100%);
+    -fx-outer-border: derive(-fx-color,-100.0%);
+    -fx-shadow-highlight-color: derive(-fx-background,-100.0%);
+    -fx-text-box-border: derive(-fx-background,-100.0%);
+}
+.button, .toggle-button, .choice-box {
+    -fx-background-radius: 30, 30, 29, 28;
+    -fx-padding: 3px 10px 3px 10px;
+}
+
+.anchor-pane{
+     /*-fx-background-image: url("wally1.png");*/
+    -fx-background-image: url("skulls.png");
+}
+.anchor-paneNew{
+    -fx-background-image: url("wally1.png");
+}
+#newAnchorPane{
+     -fx-background-image: url("wally1.png");
+}
+.menu-button {
+    -fx-background-radius: 30, 30, 29, 28;
+}
+.menu-button .label {
+    -fx-padding: 3px 18px 3px 10px;
+}
+.menu-button .arrow-button {
+    -fx-padding: 3px 6px 3px 0px;
+}
+.choice-box {
+    -fx-padding: 0 6px 0 0;
+}
+.choice-box .label {
+    -fx-padding: 3px 4px 3px 6px;
+}
+.choice-box .open-button {
+    -fx-padding: 1 0 0 8px;
+}
+.combo-box-base:editable .text-field, .combo-box-base .arrow-button, .combo-box .list-cell {
+    -fx-padding: 3px 6px 3px 6px;
+}
+.check-box .box {
+    -fx-padding: 0.39285714285714285em;
+}
+.radio-button .radio {
+    -fx-padding: 0.47619014285714284em;
+}
+.label, .check-box, .radio-button {
+    -fx-text-fill: -fx-text-background-color;
+}
+.button, .toggle-button, .check-box .box, .radio-button .radio, .choice-box, .menu-button, .tab, .combo-box-base {
+    -fx-background-insets: 0 0 -1 0, 0, 3, 4;
+}
+.button:focused, .toggle-button:focused, .check-box:focused .box, .radio-button:focused .radio, .choice-box:focused, .menu-button:focused, .combo-box-base:focused {
+    -fx-background-insets: -1.4, 0, 3, 4;
+}
+.combo-box-base .arrow-button {
+    -fx-background-insets: 0, 3, 4;
+}
+.choice-box .label { /* Workaround for RT-20015 */
+    -fx-text-fill: -fx-text-base-color;
+}
+.menu-button .label { /* Workaround for RT-20015 */
+    -fx-text-fill: -fx-text-base-color;
+}

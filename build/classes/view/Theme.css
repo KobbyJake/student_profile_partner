@@ -1,0 +1,176 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.rootSpace{
+    -fx-background-image: url("waves.png");
+}
+.table-view:row-selection .column-header-background .filler{
+    -fx-background: #F4F4F4;
+    -fx-focus-color: #cccccc;
+    -fx-control-inner-background: #FFFFFF;
+
+}
+.newText{
+    -fx-font-family: "Catriel";
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+    -fx-font-size: 40.0px;
+    -fx-text-fill: ladder(background, white 49%, black 50%);
+    -fx-fill: ladder(background, white 49%, black 50%);
+    -fx-base: #D0D0D0;
+}
+.textSpace{
+   -fx-background-image: url("sprinkles.png");
+    -fx-font-family: "Catriel";
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+    -fx-font-size: 13.0px;
+    -fx-base: #D0D0D0;
+    -fx-focus-color: #666666;
+    -fx-control-inner-background: #FFFFFF;
+    -fx-inner-border: linear-gradient(to bottom, derive(-fx-color,68.85423728813561%) 0%, derive(-fx-color,5.810169491525421%) 100%);
+    -fx-body-color: linear-gradient( to bottom, derive(-fx-color, 22.135593220339004%) 0%, derive(-fx-color, 20.0%) 50%, derive(-fx-color, 18.305084745762713%) 50.5%, derive(-fx-color, -56.98305084745763%) 100%);
+    -fx-outer-border: derive(-fx-color,11.52542372881355%);
+    -fx-shadow-highlight-color: derive(-fx-background,-100.0%);
+    -fx-text-box-border: derive(-fx-background,-33.89830508474576%);
+}
+.textSpaceNew{
+   -fx-background-image: url("hoffman.png");
+    -fx-font-family: "Catriel";
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+    -fx-font-size: 13.0px;
+    -fx-base: #D0D0D0;
+    -fx-focus-color: #666666;
+    -fx-control-inner-background: #FFFFFF;
+    -fx-inner-border: linear-gradient(to bottom, derive(-fx-color,68.85423728813561%) 0%, derive(-fx-color,5.810169491525421%) 100%);
+    -fx-body-color: linear-gradient( to bottom, derive(-fx-color, 22.135593220339004%) 0%, derive(-fx-color, 20.0%) 50%, derive(-fx-color, 18.305084745762713%) 50.5%, derive(-fx-color, -56.98305084745763%) 100%);
+    -fx-outer-border: derive(-fx-color,11.52542372881355%);
+    -fx-shadow-highlight-color: derive(-fx-background,-100.0%);
+    -fx-text-box-border: derive(-fx-background,-33.89830508474576%);
+}
+#slideShowPallet{
+-fx-background-image: url("background.png");  
+-fx-background-repeat: stretch;
+-fx-background-position: center;
+}
+#menuTile{
+     -fx-background-radius: 30, 30, 29, 28;
+    -fx-padding: 3px 10px 3px 10px;
+}
+#logTextSpace{
+    -fx-text-alignment: left;
+}
+#content{
+    -fx-font-family: "Catriel";
+    -fx-font-size: 13.0px;
+    -fx-base: #D0D0D0;
+    -fx-border-style: solid;
+    -fx-border-width: 1.5px;
+   -fx-background-image: url("hoffman.png");
+    -fx-focus-color: #666666;
+    -fx-control-inner-background: #FFFFFF;
+    -fx-inner-border: linear-gradient(to bottom, derive(-fx-color,68.85423728813561%) 0%, derive(-fx-color,5.810169491525421%) 100%);
+    -fx-body-color: linear-gradient( to bottom, derive(-fx-color, 22.135593220339004%) 0%, derive(-fx-color, 20.0%) 50%, derive(-fx-color, 18.305084745762713%) 50.5%, derive(-fx-color, -56.98305084745763%) 100%);
+    -fx-outer-border: derive(-fx-color,11.52542372881355%);
+    -fx-shadow-highlight-color: derive(-fx-background,-100.0%);
+    -fx-text-box-border: derive(-fx-background,-33.89830508474576%);
+    -fx-pref-width: 100%;
+    -fx-pref-height: 80%;
+}
+#header{
+    -fx-pref-width: 100%;
+    -fx-pref-height: 15%;
+    -fx-max-width:100%;
+    -fx-max-height:15%;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+#footer{
+    -fx-pref-width: 100%;
+    -fx-pref-height: 5%;
+    -fx-max-width:100%;
+    -fx-max-height:5%;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+#welcome-text {
+    -fx-font-size: 38px;
+    -fx-font-family: "Arial Black";
+    -fx-fill: #818181;
+    -fx-text-alignment: center;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+#description-text {
+    -fx-font-size: 20px;
+    -fx-font-family: "Cooper Black";
+    -fx-fill: #818181;
+    -fx-text-alignment: center;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+#newTable{
+     -fx-font-size: 16px;
+}
+.root {
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 13.0px;
+    -fx-base: #8F8F8F;
+    -fx-background: #F4F4F4;
+    -fx-focus-color: #0093FF;
+    -fx-control-inner-background: #FFFFFF;
+    -fx-inner-border: linear-gradient(to bottom, derive(-fx-color,100.0%) 0%, derive(-fx-color,59.43619464188082%) 100%);
+    -fx-body-color: linear-gradient( to bottom, derive(-fx-color, 100.0%) 0%, derive(-fx-color, 100.0%) 50%, derive(-fx-color, 100.0%) 50.5%, derive(-fx-color, -65.45762711864407%) 100%);
+    -fx-outer-border: derive(-fx-color,-61.016949152542374%);
+    -fx-shadow-highlight-color: derive(-fx-background,100.0%);
+    -fx-text-box-border: derive(-fx-background,20.0%);
+}
+.button, .toggle-button, .choice-box {
+    /*-fx-background-radius: 0, 0, -1, -2;*/
+    -fx-padding: 9px 16px 9px 16px;
+}
+.menu-button {
+    /*-fx-background-radius: 0, 0, -1, -2;*/
+}
+.menu-button .label {
+    -fx-padding: 9px 24px 9px 16px;
+}
+.menu-button .arrow-button {
+    -fx-padding: 9px 12px 9px 0px;
+}
+.choice-box {
+    -fx-padding: 0 12px 0 0;
+}
+.choice-box .label {
+    -fx-padding: 9px 10px 9px 12px;
+}
+.choice-box .open-button {
+    -fx-padding: 1 0 0 14px;
+}
+.combo-box-base:editable .text-field, .combo-box-base .arrow-button, .combo-box .list-cell {
+    -fx-padding: 9px 12px 9px 12px;
+}
+.check-box .box {
+    -fx-padding: 0.4807692307692308em;
+}
+.radio-button .radio {
+    -fx-padding: 0.5641022307692307em;
+}
+.label, .check-box, .radio-button {
+    -fx-text-fill: -fx-text-background-color;
+}
+.button, .toggle-button, .check-box .box, .radio-button .radio, .choice-box, .menu-button, .tab, .combo-box-base {
+    -fx-background-insets: 0 0 -1 0, 0, 4, 5;
+}
+.button:focused, .toggle-button:focused, .check-box:focused .box, .radio-button:focused .radio, .choice-box:focused, .menu-button:focused, .combo-box-base:focused {
+    -fx-background-insets: -1.4, 0, 4, 5;
+}
+.combo-box-base .arrow-button {
+    -fx-background-insets: 0, 4, 5;
+}
+.choice-box .label { /* Workaround for RT-20015 */
+    -fx-text-fill: -fx-text-base-color;
+    
+}
+.menu-button .label { /* Workaround for RT-20015 */
+    -fx-text-fill: -fx-text-base-color;
+}

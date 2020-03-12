@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jpa:entity-mappings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm" v="4.2.1" rws="_1494839066537120" Pws="_1494839066537120" cws="_1494839066537120" thm="PMacColorScheme" sm="false" xs="false" id="_149483906608813" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_1.xsd">
+    <jpa:entity xre="false" compositePrimaryKeyClass="StudentPK" abs="false" class="Student" v="true" m="false" rootElement="_149483906608813" id="_149483906608814">
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="userName" id="_149483906617828">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="userName" unique="false" nullable="false" insertable="true" updatable="true" table="student" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="password" id="_149483906617929">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="password" unique="false" nullable="false" insertable="true" updatable="true" table="student" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="fistName" id="_149483906617930">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="fistName" unique="false" nullable="true" insertable="true" updatable="true" table="student" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="lastName" id="_149483906617931">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="lastName" unique="false" nullable="true" insertable="true" updatable="true" table="student" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="indexNumber" id="_149483906617932">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="indexNumber" unique="false" nullable="true" insertable="true" updatable="true" table="student" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="telephone" id="_149483906617933">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="telephone" unique="false" nullable="true" insertable="true" updatable="true" table="student" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="email" id="_149483906617934">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="email" unique="false" nullable="true" insertable="true" updatable="true" table="student" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="hall" id="_149483906617935">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="hall" unique="false" nullable="true" insertable="true" updatable="true" table="student" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="currentSem" id="_149483906617936">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="currentSem" unique="false" nullable="true" insertable="true" updatable="true" table="student" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="outputDir" id="_149483906617937">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="outputDir" unique="false" nullable="true" insertable="true" updatable="true" table="student" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="photo" id="_149483906617938">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="photo" unique="false" nullable="true" insertable="true" updatable="true" table="student" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="comment" id="_149483906617939">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="comment" unique="false" nullable="true" insertable="true" updatable="true" table="student" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="lastBackup" id="_149483906617940">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="lastBackup" unique="false" nullable="true" insertable="true" updatable="true" table="student" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="lastRetore" id="_149483906617941">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="lastRetore" unique="false" nullable="true" insertable="true" updatable="true" table="student" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="audio" id="_149483906617942">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="audio" unique="false" nullable="true" insertable="true" updatable="true" table="student" length="2000000000"/>
+            </jpa:basic>
+            <jpa:many-to-one primaryKey="false" connected-entity-id="_149483906609226" connected-attribute-id="_1494839066188119" v="true" name="program" id="_149483906618043">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:join-column name="PROGRAM" rc="NAME" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:one-to-many own="false" collection-type="java.util.List" connected-entity-id="_149483906609115" connected-attribute-id="_149483906618256" v="true" name="courseReadCollection" id="_149483906618144">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+            </jpa:one-to-many>
+            <jpa:one-to-many own="false" collection-type="java.util.List" connected-entity-id="_149483906609220" connected-attribute-id="_149483906618479" v="true" name="passwordResetsCollection" id="_149483906618145">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+            </jpa:one-to-many>
+            <jpa:one-to-many own="false" collection-type="java.util.List" connected-entity-id="_149483906609223" connected-attribute-id="_1494839066185103" v="true" name="semesterCollection" id="_149483906618146">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+            </jpa:one-to-many>
+            <jpa:id attribute-type="String" v="true" name="id" id="_149483906617827">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="id" unique="false" nullable="false" insertable="true" updatable="true" table="student" length="2000000000"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="student"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="CourseReadPK" abs="false" class="CourseRead" v="true" m="false" rootElement="_149483906608813" id="_149483906609115">
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="semester" id="_149483906618148">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="semester" unique="false" nullable="false" insertable="true" updatable="true" table="courseRead" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="code" id="_149483906618149">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="code" unique="false" nullable="false" insertable="true" updatable="true" table="courseRead" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="title" id="_149483906618150">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="title" unique="false" nullable="true" insertable="true" updatable="true" table="courseRead" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" name="credit" id="_149483906618151">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="credit" unique="false" nullable="true" insertable="true" updatable="true" table="courseRead"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="lecturer" id="_149483906618152">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="lecturer" unique="false" nullable="true" insertable="true" updatable="true" table="courseRead" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="grade" id="_149483906618153">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="grade" unique="false" nullable="true" insertable="true" updatable="true" table="courseRead" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="resitGrade" id="_149483906618254">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="resitGrade" unique="false" nullable="true" insertable="true" updatable="true" table="courseRead" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="status" id="_149483906618255">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="status" unique="false" nullable="true" insertable="true" updatable="true" table="courseRead" length="2000000000"/>
+            </jpa:basic>
+            <jpa:many-to-one optional="false" primaryKey="false" connected-entity-id="_149483906608814" connected-attribute-id="_149483906618144" v="true" name="student" id="_149483906618256">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:join-column name="STUDENT" rc="ID" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:id attribute-type="String" v="true" name="id" id="_149483906618147">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="id" unique="false" nullable="false" insertable="true" updatable="true" table="courseRead" length="2000000000"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="courseRead"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="DocumentPK" abs="false" class="Document" v="true" m="false" rootElement="_149483906608813" id="_149483906609116">
+        <jpa:attributes>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="title" id="_149483906618258">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="title" unique="false" nullable="true" insertable="true" updatable="true" table="document" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="reference" id="_149483906618259">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="reference" unique="false" nullable="true" insertable="true" updatable="true" table="document" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="file" id="_149483906618260">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="file" unique="false" nullable="true" insertable="true" updatable="true" table="document" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="fileName" id="_149483906618261">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="fileName" unique="false" nullable="true" insertable="true" updatable="true" table="document" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="note" id="_149483906618262">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="note" unique="false" nullable="true" insertable="true" updatable="true" table="document" length="2000000000"/>
+            </jpa:basic>
+            <jpa:many-to-one optional="false" primaryKey="false" connected-entity-id="_149483906609223" connected-attribute-id="_1494839066185101" v="true" name="semesterID" id="_149483906618263">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:join-column name="SEMESTERID" rc="ID" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:id attribute-type="String" v="true" name="id" id="_149483906618257">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="id" unique="false" nullable="false" insertable="true" updatable="true" table="document" length="2000000000"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="document"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="CourseRegistryPK" abs="false" class="CourseRegistry" v="true" m="false" rootElement="_149483906608813" id="_149483906609217">
+        <jpa:attributes>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="title" id="_149483906618265">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="title" unique="false" nullable="true" insertable="true" updatable="true" table="courseRegistry" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" name="credit" id="_149483906618266">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="credit" unique="false" nullable="true" insertable="true" updatable="true" table="courseRegistry"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="status" id="_149483906618367">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="status" unique="false" nullable="true" insertable="true" updatable="true" table="courseRegistry" length="2000000000"/>
+            </jpa:basic>
+            <jpa:id attribute-type="String" v="true" name="code" id="_149483906618264">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="code" unique="false" nullable="false" insertable="true" updatable="true" table="courseRegistry" length="2000000000"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="courseRegistry"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="SystemPK" abs="false" class="System" v="true" m="false" rootElement="_149483906608813" id="_149483906609218">
+        <jpa:attributes>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="name" id="_149483906618369">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="name" unique="false" nullable="true" insertable="true" updatable="true" table="System" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="file" id="_149483906618370">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="file" unique="false" nullable="true" insertable="true" updatable="true" table="System" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="description" id="_149483906618371">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="description" unique="false" nullable="true" insertable="true" updatable="true" table="System" length="2000000000"/>
+            </jpa:basic>
+            <jpa:id attribute-type="String" v="true" name="id" id="_149483906618368">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="id" unique="false" nullable="false" insertable="true" updatable="true" table="System" length="2000000000"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="System"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="HonorsPK" abs="false" class="Honors" v="true" m="false" rootElement="_149483906608813" id="_149483906609219">
+        <jpa:attributes>
+            <jpa:basic optional="true" attribute-type="Double" v="true" name="floor" id="_149483906618373">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="floor" unique="false" nullable="true" insertable="true" updatable="true" table="honors" precision="2000000000" scale="10"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Double" v="true" name="ceiling" id="_149483906618374">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="ceiling" unique="false" nullable="true" insertable="true" updatable="true" table="honors" precision="2000000000" scale="10"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="qualification" id="_149483906618475">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="qualification" unique="false" nullable="true" insertable="true" updatable="true" table="honors" length="2000000000"/>
+            </jpa:basic>
+            <jpa:id attribute-type="String" v="true" name="id" id="_149483906618372">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="id" unique="false" nullable="false" insertable="true" updatable="true" table="honors" length="2000000000"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="honors"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="PasswordResetsPK" abs="false" class="PasswordResets" v="true" m="false" rootElement="_149483906608813" id="_149483906609220">
+        <jpa:attributes>
+            <jpa:basic optional="true" attribute-type="Double" v="true" name="createdAt" id="_149483906618477">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="createdAt" unique="false" nullable="true" insertable="true" updatable="true" table="passwordResets" precision="2000000000" scale="10"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Double" v="true" name="updatedAt" id="_149483906618478">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="updatedAt" unique="false" nullable="true" insertable="true" updatable="true" table="passwordResets" precision="2000000000" scale="10"/>
+            </jpa:basic>
+            <jpa:many-to-one optional="false" primaryKey="false" connected-entity-id="_149483906608814" connected-attribute-id="_149483906618145" v="true" name="email" id="_149483906618479">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:join-column name="EMAIL" rc="EMAIL" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:id attribute-type="String" v="true" name="token" id="_149483906618476">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="token" unique="false" nullable="false" insertable="true" updatable="true" table="passwordResets" length="2000000000"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="passwordResets"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="SchedulePK" abs="false" class="Schedule" v="true" m="false" rootElement="_149483906608813" id="_149483906609221">
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="String" v="true" name="day" id="_149483906618481">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="Day" unique="false" nullable="false" insertable="true" updatable="true" table="schedule" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="night" id="_149483906618482">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="Night" unique="false" nullable="true" insertable="true" updatable="true" table="schedule" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="evening" id="_149483906618483">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="Evening" unique="false" nullable="true" insertable="true" updatable="true" table="schedule" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="afternoon" id="_149483906618484">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="Afternoon" unique="false" nullable="true" insertable="true" updatable="true" table="schedule" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="midDay" id="_149483906618485">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="MidDay" unique="false" nullable="true" insertable="true" updatable="true" table="schedule" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="morning" id="_149483906618486">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="Morning" unique="false" nullable="true" insertable="true" updatable="true" table="schedule" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="dawn" id="_149483906618487">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="Dawn" unique="false" nullable="true" insertable="true" updatable="true" table="schedule" length="2000000000"/>
+            </jpa:basic>
+            <jpa:many-to-one optional="false" primaryKey="false" connected-entity-id="_149483906609223" connected-attribute-id="_1494839066185102" v="true" name="semesterID" id="_149483906618488">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:join-column name="SEMESTERID" rc="ID" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:id attribute-type="Integer" v="true" name="id" id="_149483906618480">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="id" unique="false" nullable="false" insertable="true" updatable="true" table="schedule"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="schedule"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="LocationPK" abs="false" class="Location" v="true" m="false" rootElement="_149483906608813" id="_149483906609222">
+        <jpa:attributes>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="name" id="_149483906618590">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="name" unique="false" nullable="true" insertable="true" updatable="true" table="location" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="campus" id="_149483906618591">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="campus" unique="false" nullable="true" insertable="true" updatable="true" table="location" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="type" id="_149483906618592">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="type" unique="false" nullable="true" insertable="true" updatable="true" table="location" length="2000000000"/>
+            </jpa:basic>
+            <jpa:id attribute-type="String" v="true" name="id" id="_149483906618589">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="id" unique="false" nullable="false" insertable="true" updatable="true" table="location" length="2000000000"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="location"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="SemesterPK" abs="false" class="Semester" v="true" m="false" rootElement="_149483906608813" id="_149483906609223">
+        <jpa:attributes>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="name" id="_149483906618594">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="name" unique="false" nullable="true" insertable="true" updatable="true" table="semester" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" name="numberOfCourses" id="_149483906618595">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="numberOfCourses" unique="false" nullable="true" insertable="true" updatable="true" table="semester"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Integer" v="true" name="totalCredit" id="_149483906618596">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="totalCredit" unique="false" nullable="true" insertable="true" updatable="true" table="semester"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Double" v="true" name="gpa" id="_149483906618597">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="gpa" unique="false" nullable="true" insertable="true" updatable="true" table="semester" precision="2000000000" scale="10"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Double" v="true" name="cgpa" id="_149483906618598">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="cgpa" unique="false" nullable="true" insertable="true" updatable="true" table="semester" precision="2000000000" scale="10"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="startDate" id="_149483906618599">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="startDate" unique="false" nullable="true" insertable="true" updatable="true" table="semester" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="endDate" id="_1494839066185100">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="endDate" unique="false" nullable="true" insertable="true" updatable="true" table="semester" length="2000000000"/>
+            </jpa:basic>
+            <jpa:many-to-one optional="false" primaryKey="false" connected-entity-id="_149483906608814" connected-attribute-id="_149483906618146" v="true" name="studentID" id="_1494839066185103">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:join-column name="STUDENTID" rc="ID" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:one-to-many own="false" collection-type="java.util.List" connected-entity-id="_149483906609116" connected-attribute-id="_149483906618263" v="true" name="documentCollection" id="_1494839066185101">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+            </jpa:one-to-many>
+            <jpa:one-to-many own="false" collection-type="java.util.List" connected-entity-id="_149483906609221" connected-attribute-id="_149483906618488" v="true" name="scheduleCollection" id="_1494839066185102">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+            </jpa:one-to-many>
+            <jpa:one-to-many own="false" collection-type="java.util.List" connected-entity-id="_149483906609224" connected-attribute-id="_1494839066187113" v="true" name="eventCollection" id="_1494839066186104">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+            </jpa:one-to-many>
+            <jpa:id attribute-type="String" v="true" name="id" id="_149483906618593">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="id" unique="false" nullable="false" insertable="true" updatable="true" table="semester" length="2000000000"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="semester"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="EventPK" abs="false" class="Event" v="true" m="false" rootElement="_149483906608813" id="_149483906609224">
+        <jpa:attributes>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="type" id="_1494839066187106">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="type" unique="false" nullable="true" insertable="true" updatable="true" table="event" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="title" id="_1494839066187107">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="title" unique="false" nullable="true" insertable="true" updatable="true" table="event" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Double" v="true" name="amount" id="_1494839066187108">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="amount" unique="false" nullable="true" insertable="true" updatable="true" table="event" precision="2000000000" scale="10"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="date" id="_1494839066187109">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="date" unique="false" nullable="true" insertable="true" updatable="true" table="event" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="time" id="_1494839066187110">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="time" unique="false" nullable="true" insertable="true" updatable="true" table="event" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="venue" id="_1494839066187111">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="venue" unique="false" nullable="true" insertable="true" updatable="true" table="event" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="note" id="_1494839066187112">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="note" unique="false" nullable="true" insertable="true" updatable="true" table="event" length="2000000000"/>
+            </jpa:basic>
+            <jpa:many-to-one optional="false" primaryKey="false" connected-entity-id="_149483906609223" connected-attribute-id="_1494839066186104" v="true" name="semesterID" id="_1494839066187113">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:join-column name="SEMESTERID" rc="ID" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:id attribute-type="String" v="true" name="id" id="_1494839066187105">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="id" unique="false" nullable="false" insertable="true" updatable="true" table="event" length="2000000000"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="event"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="GradingSchemePK" abs="false" class="GradingScheme" v="true" m="false" rootElement="_149483906608813" id="_149483906609225">
+        <jpa:attributes>
+            <jpa:basic optional="true" attribute-type="Double" v="true" name="point" id="_1494839066187115">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="point" unique="false" nullable="true" insertable="true" updatable="true" table="gradingScheme" precision="2000000000" scale="10"/>
+            </jpa:basic>
+            <jpa:id attribute-type="String" v="true" name="name" id="_1494839066187114">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="name" unique="false" nullable="false" insertable="true" updatable="true" table="gradingScheme" length="2000000000"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="gradingScheme"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="ProgrammePK" abs="false" class="Programme" v="true" m="false" rootElement="_149483906608813" id="_149483906609226">
+        <jpa:attributes>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="campus" id="_1494839066188117">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="campus" unique="false" nullable="true" insertable="true" updatable="true" table="programme" length="2000000000"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="duration" id="_1494839066188118">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="duration" unique="false" nullable="true" insertable="true" updatable="true" table="programme" length="2000000000"/>
+            </jpa:basic>
+            <jpa:one-to-many own="false" collection-type="java.util.List" connected-entity-id="_149483906608814" connected-attribute-id="_149483906618043" v="true" name="studentCollection" id="_1494839066188119">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+            </jpa:one-to-many>
+            <jpa:id attribute-type="String" v="true" name="name" id="_1494839066187116">
+                <jpa:bv/>
+                <jpa:kbv/>
+                <jpa:vbv/>
+                <jpa:column name="name" unique="false" nullable="false" insertable="true" updatable="true" table="programme" length="2000000000"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="programme"/>
+    </jpa:entity>
+    <jpa:snp loc="BEFORE_PACKAGE" e="true">/**
+ * This file was generated by the Jeddict
+ */</jpa:snp>
+    <jpa:c/>
+    <jpa:wsl>
+        <jpa:ws n="Main" id="_1494839066537120">
+            <i ref="_149483906609217" x="1073" y="727">
+                <el/>
+            </i>
+            <i ref="_149483906609115" x="32" y="348">
+                <el/>
+            </i>
+            <i ref="_149483906609225" x="1925" y="727">
+                <el/>
+            </i>
+            <i ref="_149483906609116" x="791" y="727">
+                <el/>
+            </i>
+            <i ref="_149483906609226" x="32" y="1274">
+                <el/>
+            </i>
+            <i ref="_149483906608814" x="262" y="727">
+                <el/>
+            </i>
+            <i ref="_149483906609218" x="1385" y="727">
+                <el/>
+            </i>
+            <i ref="_149483906609219" x="2240" y="727">
+                <el/>
+            </i>
+            <i ref="_149483906609220" x="533" y="1274">
+                <el/>
+            </i>
+            <i ref="_149483906609223" x="533" y="348">
+                <el/>
+            </i>
+            <i ref="_149483906609224" x="262" y="32">
+                <el/>
+            </i>
+            <i ref="_149483906609221" x="791" y="32">
+                <el/>
+            </i>
+            <i ref="_149483906609222" x="1652" y="727">
+                <el/>
+            </i>
+        </jpa:ws>
+    </jpa:wsl>
+</jpa:entity-mappings>
